@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title><?= $titulo ?? 'Sem Título' ?></title>
-</head>
-<body>
-    <h1><?= $titulo ?? 'Bem-vindo!' ?></h1>
+<?php
+require_once __DIR__ . '/layout/head.php';
+require_once __DIR__ . '/layout/menu.php';
+?>
+
+<div class="container">
+    <h1><?= $titulo ?? 'Bem-vindo!'?></h1>
     <p>Essa é a página inicial do sistema!</p>
-</body>
-</html>
+</div>
+
+<?php
+require_once __DIR__ . '/layout/rodape.php';
+?>
